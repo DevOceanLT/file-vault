@@ -1,9 +1,9 @@
 <?php
 
-namespace Brainstud\FileVault\Tests;
+namespace DevOceanLT\FileVault\Tests;
 
-use Brainstud\FileVault\Facades\FileVault;
-use Brainstud\FileVault\FileVaultServiceProvider;
+use DevOceanLT\FileVault\Facades\FileVault;
+use DevOceanLT\FileVault\FileVaultServiceProvider;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Storage;
 use Orchestra\Testbench\TestCase;
@@ -61,7 +61,7 @@ class FileVaultTest extends TestCase
     protected function generateRandomKey()
     {
         return 'base64:'.base64_encode(
-            \Brainstud\FileVault\FileVault::generateKey()
+            \DevOceanLT\FileVault\FileVault::generateKey()
         );
     }
 

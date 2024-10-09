@@ -1,23 +1,24 @@
 {
-    "name": "brainstud/file-vault",
+    "name": "devoceanlt/file-vault",
     "description": "",
     "keywords": [
         "laravel", "encrypt", "decrypt", "encryption", "decryption",
         "cbc", "php", "file", "file-vault"
     ],
-    "homepage": "https://github.com/brainstudnl/file-vault",
+    "homepage": "https://github.com/devoceanlt/file-vault",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Niek Pijp",
-            "email": "niek@brainstud.com",
+            "name": "Marius Geležinis",
+            "email": "marius.gelezinis@devocean.lt",
+            "homepage": "https://www.devocean.lt",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^8.0 || ^9.0 ",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0",
         "ext-openssl": "*"
     },
     "require-dev": {
@@ -27,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Brainstud\\FileVault\\": "src"
+            "DevOceanLT\\FileVault\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Brainstud\\FileVault\\Tests\\": "tests"
+            "DevOceanLT\\FileVault\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Brainstud\\FileVault\\FileVaultServiceProvider"
+                "DevOceanLT\\FileVault\\FileVaultServiceProvider"
             ],
             "aliases": {
-                "FileVault": "Brainstud\\FileVault\\Facades\\FileVault"
+                "FileVault": "DevOceanLT\\FileVault\\Facades\\FileVault"
             }
         }
     }
